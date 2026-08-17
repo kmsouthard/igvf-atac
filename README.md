@@ -33,9 +33,13 @@ against what the portal currently declares.
 
 ## The pipeline
 
-```
-nextflow run nf-core/atacseq --input samplesheet.csv --outdir results \
-  --genome GRCh38 --read_length 100 -profile singularity
+`pipeline.sh` runs it; this is the command the submitted files came from, not a
+reconstruction.
+
+```bash
+nextflow run nf-core/atacseq -r 2.1.2 \
+    --input pipeline_info/samplesheet.valid.csv --outdir results \
+    --genome GRCh38 --read_length 100 -profile singularity
 ```
 
 nf-core/atacseq **2.1.2** on Nextflow 23.10.0, broad peak mode. The exact samplesheet
@@ -86,6 +90,7 @@ the correction; the harness will pass once it is applied.
 ## Layout
 
 ```
+pipeline.sh     the pipeline, end to end
 pipeline_info/  the run's own samplesheet and software_versions.yml
 verify/         verify.py, plus three standalone bigWig readers
 results/        the replicate crosswalk
