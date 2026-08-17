@@ -1,0 +1,6 @@
+work/
+*.bw
+*.bigWig
+*.bam
+*.bai
+__pycache__/
