@@ -41,6 +41,18 @@ orphan-stripped. The bigWig scale factor is `1e6 / mapped reads`.
 Peak calling, consensus peaks, featureCounts, DESeq2, ataqv and the pooled `.mRp.clN`
 merged-replicate outputs are also produced under `results/`.
 
+## Data
+
+IGVF Data Portal, analysis set
+[IGVFDS5661FPYR](https://data.igvf.org/analysis-sets/IGVFDS5661FPYR/) — the three Hs27
+`.mLb.clN` BAMs, indexes and bigWigs. Its inputs are measurement sets
+[IGVFDS4038GSGB](https://data.igvf.org/measurement-sets/IGVFDS4038GSGB/),
+[IGVFDS7678SSQX](https://data.igvf.org/measurement-sets/IGVFDS7678SSQX/) and
+[IGVFDS8072MCFE](https://data.igvf.org/measurement-sets/IGVFDS8072MCFE/).
+
+These records are `in progress`, so the links resolve only for signed-in submitters
+until release.
+
 ## Related
 
 * Pipeline: [nf-core/atacseq](https://nf-co.re/atacseq/2.1.2) 2.1.2
