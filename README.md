@@ -41,11 +41,6 @@ orphan-stripped. The bigWig scale factor is `1e6 / mapped reads`.
 Peak calling, consensus peaks, featureCounts, DESeq2, ataqv and the pooled `.mRp.clN`
 merged-replicate outputs are also produced under `results/`.
 
-## Note on sample names
-
-nf-core numbers replicates in samplesheet order, which is not the bench numbering:
-`Hs27_REP1` is library `RA479-3`, `Hs27_REP2` is `RA479-2`, `Hs27_REP3` is `RA479-1`.
-
 ## Related
 
 * Pipeline: [nf-core/atacseq](https://nf-co.re/atacseq/2.1.2) 2.1.2
